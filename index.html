@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/97cc7f82b3.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .padding {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+</style>
+<body>
+    <div class="row" id="submitRow">
+        <div class="col-10">
+            <input type="file" id="csv">
+        </div>
+    </div>
+    <div class="row" id="allTypes" style="display: none;">
+        <div class="col-10">
+            <select id="typeSelect" onchange="typeSelect()">
+
+            </select>
+            <select id="amountSelect" onchange="typeSelect()">
+
+            </select>
+            <select id="teType" onchange="typeSelect()">
+                
+            </select>
+            <select id="totalSelect" onchange="typeSelect()"></select>
+            <select id="exchangeCol" onchange="typeSelect()"></select>
+        </div>
+    </div>
+    <div class="row justify-content-center" id="graph" style="display: none;">
+
+    </div>
+</body>
+</html>
+<script src="init.js"></script>
+<script src="logic.js"></script>
+<script src="process.js"></script>
+<script src="graphing.js"></script>
+<script src="drawing.js"></script>
